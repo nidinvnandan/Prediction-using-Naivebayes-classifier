@@ -2,4 +2,4 @@ pandas
 streamlit
 scikit-learn
 naive_bayes
-bbc-text.txt
+bbc-text
