@@ -1,6 +1,5 @@
 pandas
 streamlit
-sklearn.model_selection
-sklearn.feature_extraction.text
+sklearn
 naive_bayes.py
 bbc-text.txt
