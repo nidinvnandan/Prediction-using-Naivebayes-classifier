@@ -9,4 +9,4 @@ if st.button("Predict"):
     
     vec = o.vector.transform(l).toarray()
     k=str(list(o.naivebayes.predict(vec))[0]).replace('0', 'TECH').replace('1', 'BUSINESS').replace('2', 'SPORTS').replace('3','ENTERTAINMENT').replace('4','POLITICS')
-    st.write(k)
+    st.write('The catagory which the given settence belongs is',k)
