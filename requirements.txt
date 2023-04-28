@@ -1,5 +1,5 @@
 pandas
 streamlit
-sklearn
+scikit-learn
 naive_bayes.py
 bbc-text.txt
