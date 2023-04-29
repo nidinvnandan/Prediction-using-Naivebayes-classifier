@@ -1,7 +1,7 @@
 from naive_bayes import naive_bayes as o
 import streamlit as st
-st.header('Prediction of category using Naive Bayes Classifier')
-input = st.text_area("Please enter the text whose catagory you want to know", value="")
+st.header('Prediction of Category using Naive Bayes Classifier')
+input = st.text_area("Please enter the text whose category you want to know", value="")
 l=[]
 l.append(input)
 if st.button("Predict"):
@@ -9,4 +9,4 @@ if st.button("Predict"):
     
     vec = o.vector.transform(l).toarray()
     k=str(list(o.naivebayes.predict(vec))[0]).replace('0', 'TECH').replace('1', 'BUSINESS').replace('2', 'SPORTS').replace('3','ENTERTAINMENT').replace('4','POLITICS')
-    st.write('The category to which the given text belongs is: ',k)
+    st.write('The Category to which the given text belongs is: ',k)
